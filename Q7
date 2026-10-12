@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    while (true) {
+        cout << "Enter number (-1 to stop): ";
+        cin >> number;
+
+        if (number == -1)
+            break;
+        if (number < 0)
+            continue;
+
+        cout << "Accepted: " << number << endl;
+    }
+    return 0;
+}
