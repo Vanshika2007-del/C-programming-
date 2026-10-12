@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    cout << "Enter number: ";
+    cin >> number;
+
+    cout << "Prime factors: ";
+
+    for (int factor = 2; factor <= number; factor++) {
+        while (number % factor == 0) {
+            cout << factor << " ";
+            number /= factor;
+        }
+    }
+
+    return 0;
+}
